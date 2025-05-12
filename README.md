@@ -25,6 +25,12 @@ This project automates subdomain reconnaissance using [BBOT](https://github.com/
    do_token         = "your_digitalocean_token"
    ssh_fingerprint  = "your_ssh_key_fingerprint"
 ```
+3. Create a droplet in DigitalOcean. Install BBOT and test to make sure it's working. Ge the snapshot ID and replace it in main.tf image =
+
+Get the snapshot ID Digital Ocean CLI
+```
+doctl compute image list-user | grep bbot-base
+```
 ## Usage
 
 `./run.sh "example.com test.com" "my-scan-id"`
