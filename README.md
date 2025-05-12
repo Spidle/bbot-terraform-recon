@@ -33,9 +33,9 @@ doctl compute image list-user | grep bbot-base
 ```
 ## Usage
 
-`./run.sh "example.com test.com" "my-scan-id"`
+`./run.sh "example.com,test.com" "my-scan-id"`
 
-- The first argument is a space-separated list of target domains.
+- The first argument is a comma-separated list of target domains.
 - The second argument is an identifier used to name the result folder under results/.
 
 ## Output
