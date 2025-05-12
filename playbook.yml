@@ -1,0 +1,10 @@
+- name: Run BBOT Recon
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Run BBOT for multiple targets in JSONL format
+      shell: |
+        bbot -t "{{ target_domains }}" -p subdomain-enum -o / -n prod_bbot_scan --retry-deps --silent
+      args:
+        creates: /root/bbot_output.jsonl

@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Allow specific files or directories
+!.gitignore
+!README.md
+!ansible.cfg
+!main.tf 
+!playbook.yml 
+!variables.tf
+!variables.tfvars.example
+!run.sh
